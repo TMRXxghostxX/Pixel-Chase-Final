@@ -65,6 +65,13 @@ function draw() {
   background("white");
   
   console.log(score);
+  
+  if(player.x > 380){
+    player.x = 380;
+  }
+  if(player.x < 20){
+    player.x = 20;
+  }
 
   gameOver.depth += player.depth;
   restart.depth += player.depth;
